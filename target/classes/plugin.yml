@@ -1,0 +1,17 @@
+name: DH-Giftcode
+main: camchua.dhgiftcode.Main
+version: 1.7.3
+author: [CamChua_VN]
+
+commands:
+  giftcode:
+
+permissions:
+  dhgiftcode.create:
+    default: op
+  dhgiftcode.help:
+    default: op
+  dhgiftcode.reload:
+    default: op
+  dhgiftcode.list:
+    default: op

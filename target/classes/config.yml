@@ -1,0 +1,101 @@
+# Our Website: www.dihoastore.net
+# Email: dihoastore.mc@gmail.com
+# Fanpage: www.facebook.com/dihoastore/
+
+# Key License / Hướng dẫn cài: https://bit.ly/3gJtsbp
+#CRACKED BY CAMCHUAvn
+license: "Bùm bùm chíu chíu"
+
+# Danh sách các Permissions: dhgiftcode.create -  /giftcode create
+#                            dhgiftcode.list   -  /giftcode list
+#                            dhgiftcode.help   -  /giftcode help
+#                            dhgiftcode.reload -  /giftcode reload
+#                            giftcode.give     -  /giftcode <code> <player>
+
+Settings:
+  IP-Check: true # Giới hạn 1 IP chỉ nhận được cho 1 Account
+  GiftcodeFormat: "XXXX-XXXX-XXXX"
+  CodeRandom: 10
+  RandomMaxUse: 1
+  
+  # Tùy chỉnh câu lệnh sử dụng của Plugin
+  CommandAliases:
+    - code
+    
+  Gui:
+    Title: "&8DH-Giftcode | Thiết lập phần thưởng"
+    Item:
+      Money:
+        ID: gold_ingot
+        Data: 0
+        Name: "&f&lMoney: &a&l<money>"
+        Lore:
+        - "&7Loại tiền tệ của Vault"
+      Points:
+        ID: emerald
+        Data: 0
+        Name: "&f&lPoint: &6&l<points> ⛁"
+        Lore:
+        - "&7Loại tiền tệ của PlayerPoints"
+      Exp:
+        ID: exp_bottle
+        Data: 0
+        Name: "&f&lExp: &d&l<exp>"
+        Lore:
+        - "&7Điểm kinh nghiệm mà người"
+        - "&7chơi nhận được."
+      Limit:
+        ID: paper
+        Data: 0
+        Name: "&f&lLimit: &c&l<limit>"
+        Lore:
+        - "&7Giới hạn lượt dùng Code"
+        - "&7đối với mỗi tài khoản."
+      Random:
+        ID: paper
+        Data: 0
+        Name: "&f&lRandom: &c&l<random>"
+        Lore:
+          - "&7Số lượng vật phẩm random"
+      RequireOnline:
+        ID: watch
+        Data: 0
+        Name: "&f&lRequire Online: &b&l<online>h"
+        Lore:
+        - "&7Yêu cầu Online để có thể"
+        - "&7sử dụng mã Code này."
+        
+# Tổng hợp những tin nhắn hiển thị của DH-Giftcode
+Message:
+  FormatError: "&8[&e&lGiftcode&8] &cLỗi định dạng, hãy kiểm tra lại"
+  TypingValue: "&8[&e&lGiftcode&8] &7Hãy nhập giá trị bạn muốn &8(&7Chat &fhuy &7để hủy&8)"
+  NoPermissions: "&8[&e&lGiftcode&8] &cBạn không có quyền làm điều này"
+  CodeExist: "&8[&e&lGiftcode&8] &cMã Code này đã tồn tại"
+  CodeNotExist: "&8[&e&lGiftcode&8] &cMã Code này không tồn tại"
+  CodeReceived: "&8[&e&lGiftcode&8] &aChúc mừng, bạn đã nhận được quà Giftcode"
+  PlayerCodeReceived: "&8[&e&lGiftcode&8] &7Người chơi &e<player> &7vừa nhập &fCode &7thành công"
+  CodeList: "&7Danh sách Code:&e<code>"
+  TypingCodeExpired: "&8[&e&lGiftcode&8] &7Hãy nhập số ngày &fCode &7hết hạn &8(&7Chat &fhuy &7để hủy&8)"
+  AlreadyUseCode: "&8[&e&lGiftcode&8] &cBạn đã sử dụng mã Code này rồi"
+  AlreadyUseCodeRandom: "&8[&e&lGiftcode&8] &cBạn không thể nhập loại mã Code này nữa"
+  SaveCode: "&8[&e&lGiftcode&8] &aXin chúc mừng, bạn đã hoàn tất chỉnh sửa"
+  DeleteCode: "&8[&e&lGiftcode&8] &cBạn đã xóa Code vừa chỉnh sửa"
+  CodeNotFound: "&8[&e&lGiftcode&8] &cMã Code này không tồn tại hoặc đã được sử dụng"
+  TypingCodeMaxUse: "&8[&e&lGiftcode&8] &7Hãy nhập số lượng Code có thể sử dụng &8(&7Chat &fhuy &7để hủy&8)"
+  CodeIpUsed: "&8[&e&lGiftcode&8] &cXin lỗi, mỗi IP chỉ được sử dụng mã Code này 1 lần"
+  CodeMaxUse: "&8[&e&lGiftcode&8] &cThật đáng tiếc, mã Code này đã được dùng hết"
+  RequireOnline: "&8[&e&lGiftcode&8] &7Cần phải &fOnline &7đủ &f<require> giờ &7để có thể nhận Code"
+  NotOnline: "&8[&e&lGiftcode&8] &cNgười chơi này không online"
+
+# Nội dung tin nhắn hiển thị khi người chơi sài lệnh /giftcode help
+  Help:
+  - "&8&m&l                                                 "
+  - "&7» &a/giftcode create <code>&7: &fTạo mã Code dùng chung"
+  - "&7» &a/giftcode create <name> random&7: &fTạo mã Code Random"
+  - "&7» &a/giftcode create <code> limit&7: &fTạo mã Code giới hạn"
+  - "&7» &a/giftcode <code> <player>&7: &fĐưa Code cho người chơi"
+  - "&7» &a/giftcode <code>&7: &fNhập mã Code để nhận quà"
+  - "&7» &a/giftcode edit <name>&7: &fTùy chỉnh phần thưởng"
+  - "&7» &a/giftcode list&7: &fXem danh sách mã Code"
+  - "&7» &a/giftcode reload&7: &fReload làm mới Plugin"
+  - "&8&m&l                                                 "
